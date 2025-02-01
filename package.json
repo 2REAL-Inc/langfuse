@@ -8,7 +8,7 @@
     "node": "20"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "node preinstall.js",
     "infra:dev:up": "docker compose -f ./docker-compose.dev.yml up -d --wait",
     "infra:dev:down": "docker compose -f ./docker-compose.dev.yml down",
     "infra:dev:prune": "docker compose -f ./docker-compose.dev.yml down -v",
